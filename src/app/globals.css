@@ -1,0 +1,33 @@
+/*
+ * Google Fonts
+ * Loaded at runtime so builds succeed in environments without internet access.
+ *   - Bebas Neue  → massive, condensed headings (font-heading)
+ *   - Fira Code   → monospaced tech text and logo (font-mono)
+ *   - Inter       → standard body copy (font-body)
+ */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Code:wght@300..700&family=Inter:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #12081C;
+  --foreground: #ffffff;
+
+  /* Font family CSS variables consumed by tailwind.config.ts */
+  --font-bebas-neue: "Bebas Neue", sans-serif;
+  --font-fira-code: "Fira Code", monospace;
+  --font-inter: "Inter", sans-serif;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
