@@ -1,0 +1,15 @@
+{
+  "hosting": {
+    "site": "codefuse-acsusj",
+    "public": "out",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "cleanUrls": true,
+    "predeploy": [
+      "npm run build"
+    ]
+  }
+}
